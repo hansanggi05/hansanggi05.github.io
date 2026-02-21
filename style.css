@@ -66,30 +66,7 @@ body {
     box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-    gap: 8px 16px;
-}
 
-.tag-list {
-    list-style: none;
-    display: flex;
-    gap: 8px;
-}
-
-.tag {
-    font-size: 12px;
-    padding:4px 10px;
-    border-radius: 999px;
-    background-color: #4338ca;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 12px;
-    color: #9ca3af;
-}
 
 .profile-right h2{
     font-size: 22px;
@@ -162,3 +139,17 @@ body {
     color: #9ca3af;
 
 }
+
+@media (max-width: 640px) {
+    .profile-card{
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    .profile-card{
+        padding: 20px 16px 18px;
+    }
+    .section-card{
+        padding: 20px 16px 18px;
+    }
+}
+
